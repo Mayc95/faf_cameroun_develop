@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:replace="fragments/fragment_meta :: meta"/>
+
+<th:block th:replace="fragments/fragment_head :: head('Erreur')" />
+
+<body >
+<!--
+<th:block th:replace="fragments/fragment_navbar :: navbar" />-->
+
+<div class="loader"></div>
+
+<div id="app">
+    <section class="section">
+        <div class="container mt-5">
+            <div class="page-error">
+                <div class="page-inner">
+                    <h1>500</h1>
+                    <div class="page-description">
+                        Whoopps, quelque chose s’est mal passé.
+                    </div>
+                    <div class="page-search">
+
+                        <div class="mt-3">
+                            <a th:href="@{/account/logout}">Accueil</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+<th:block th:replace="fragments/fragment_script :: script"/>
+
+
+</body>
+</html>

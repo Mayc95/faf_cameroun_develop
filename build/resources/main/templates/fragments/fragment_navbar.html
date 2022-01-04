@@ -1,0 +1,148 @@
+<div class="navbar-area" xmlns:th="//www.thymeleaf.org" th:fragment="navbar">
+    <div class="main-responsive-nav">
+        <div class="container">
+            <div class="main-responsive-menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-navbar">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="image">
+                </a>
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a th:href="@{/index}" class="nav-link active">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                FAF <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a th:href="@{/about}" class="nav-link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a th:href="@{/apply}" class="nav-link">
+                                        Apply now
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a th:href="@{/gallery}" class="nav-link">
+                                        Gallery
+                                    </a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a th:href="@{/signup}" class="nav-link">
+                                        Sign Up
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a th:href="@{/contact}" class="nav-link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Services
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="services.html" class="nav-link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="services-details.html" class="nav-link">
+                                        Services Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="funding.html" class="nav-link">
+                                Funding
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="loans.html" class="nav-link">
+                                Loans
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                News
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="news.html" class="nav-link">
+                                        News
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="news-details.html" class="nav-link">
+                                        News Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-options d-flex align-items-center">
+                        <div class="option-item">
+                            <i class="search-btn flaticon-magnifying-glass"></i>
+                            <i class="close-btn flaticon-close"></i>
+                            <div class="search-overlay search-popup">
+                                <div class='search-box'>
+                                    <form class="search-form">
+                                        <input class="search-input" name="search" placeholder="Search" type="text">
+                                        <button class="search-button" type="submit">
+                                            <i class="flaticon-magnifying-glass"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option-item">
+                            <div class="info">
+                                <i class="flaticon-telephone"></i>
+                                <span>Call Now</span>
+                                <p>
+                                    <a href="tel:1514312-5678">+1 (514) 312-5678</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="option-item">
+                            <a href="apply-now.html" class="default-btn">
+                                Apply now
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
